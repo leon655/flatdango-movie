@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLATDANGO BOOKING</title>
+    <style>
+        body {
+            display:flex;
+            flex-direction:row;
+            margin:0;
+            font-family:arial sans-serif;
+            background-color:#f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color:white;
+            padding:1px;
+            text-align:center;
+        }
+        .movie-container {
+            padding:20px;
+        }
+        .movie {
+            display:flex;
+            margin-bottom:20px;
+            background:#fff;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+            border-radius:8px;
+        }
+        .movie img {
+            width:150px;
+            height:200px;
+            border-radius:8px 0 0 8px;
+        }
+        .movie-details {
+            padding:20px;
+            width:100%;
+        }
+        .movie-title {
+            font-size:20px;
+            font-weight:bold;
+        }
+        .movie-runtime {
+            color:gray;
+            margin:10px 0;
+        }
+        .showtimes {
+            margin-top:10px;
+        }
+        .showtime {
+            display:inline-block;
+            margin-right:10px;
+            background-color: #007BFF;
+            Color:white;
+            padding:5px 10px;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+        .showtime:hover {
+            background-color:aqua
+        }
+
+        .right-menu {
+            flex:1;
+            padding:20px;
+            background-color:#fff;
+            box-shadow:-2px 0 5px rgba(0,0,0,0,0.1);
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid gap:20px;
+            align-items:center;
+        }
+        .menu-title {
+            grid-column:span 2;
+            text-align:center;
+            font-weight:bold;
+            margin-bottom:10px;
+            font-size:18px;
+            color:#444;
+        }
+        .movie-poster img{
+            width:80px;
+            height:120px;
+            border-radius:10px;
+        }
+        .menu-item img {
+            width:80px;
+            height:auto;
+            border-radius: radius 5px;
+            transition:transform 0.3s;
+
+        }
+ .menu-item img:hover {
+    transform:scale(1.1);
+ }
+        footer {
+            background-color:#333;
+            color:white;
+            text-align:center;
+            padding:10px 0;
+            margin-top:10px;
+        }
+        </style>
+</head>
+<body>
+    <header style="width:10%;text-align:center;background-color:#524c4c;padding:10px;font-size: 24px;font-weight:bold;">
+  Flatdango Movie Theatre
+  <p style="font-size: 14px; color:#666;">choose your favourite movie and book tickets</p>
+    </header>
+    <div style="display:flex;flex-direction: row;width: 100%;">
+        <div class="main container">
+   </div>
+
+    <div class="movie-container" id="movie-container"></div>
+    <div class="right-menu">
+        <div class="menu-title">Movie Menu</div>
+        <div class="menu-item">
+            <img src="assets/images/black mirror.jpeg" alt="">
+ </div>
+ <div class="menu-item">
+    <img src="assets/images/warzone.jpeg" alt="assets/images/warzone.jpeg">
+</div>
+<div class="menu-item">
+    <img src="assets/images/hitman.jpeg" alt="">
+</div>
+<div class="menu-item">
+    <img src="assets/images/the substance.jpeg" alt="">
+</div>
+<div class="menu-item">
+    <img src="assets/images/substance 2.jpeg" alt="">
+</div>
+<div class="menu-item">
+    <img src="assets/images/dune2.jpeg" alt="">
+</div>
+<div class="menu-item">
+    <img src="assets/images/dune2.jpeg" alt="">
+</div>
+    </div>
+    <footer>
+        <p> 2024 movie ticket booking app</p>
+    </footer>
+    <script src="cinema.js"></script>
+    
+</body>
+</html>
